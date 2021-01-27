@@ -1,0 +1,36 @@
+.fragment_324 {}
+
+.fragment_324 .cta {
+    overflow: hidden;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.fragment_324 .CABS {
+    text-transform: uppercase!important;
+    color: var(--light)!important;
+    color: var( --white);
+    font-family: "Roboto Condensed", Sans-serif;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    color: var(--light)!important;
+    font-size: 36px!important;
+}
+
+.fragment_324 .message {
+    color: var(--white)!important;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 1.5rem!important;
+    font-weight: 500!important;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    line-height: 1.2em;
+}
+
+.fragment_324 .parallex {
+    overflow: hidden!important;
+    padding: 80px 0!important;
+    background-size: cover!important;
+    background: linear-gradient(rgb(143 206 236 / 68%), rgb(43 160 206 / 45%));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

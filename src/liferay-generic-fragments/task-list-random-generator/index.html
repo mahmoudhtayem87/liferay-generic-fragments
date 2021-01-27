@@ -1,0 +1,48 @@
+[#assign _rand = 0.55] [#assign backgrounds = ["bg-primary", "bg-success", "bg-warning","bg-danger"]] [#function rand min max] [#local now = .now?long?c /] [#local randomNum = _rand + ("0." + now?substring(now?length-1) + now?substring(now?length-2))?number
+/] [#if (randomNum > 1)] [#assign _rand = randomNum % 1 /] [#else] [#assign _rand = randomNum /] [/#if] [#return (min + ((max - min) * _rand))?round /] [/#function]
+<div class="fragment_302">
+    [#assign totalTasks = configuration.numberOfTasks!0] [#assign totalSections = configuration.numberOfSections!0]
+    <div class="card-hover-shadow-2x mb-3 card">
+        <div class="card-header-tab card-header">
+            <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;<label data-lfr-editable-id="Title" data-lfr-editable-type="text">
+        </label>
+            </div>
+        </div>
+        <div style="position: static;" class="ps ps--active-y">
+            <div class="ps-content">
+                <ul class=" list-group list-group-flush">
+                    [#list 1..totalSections as sectionIndex]
+                    <h4 class="px-4 py-2 sectionTitle" data-lfr-editable-id="section_${sectionIndex}" data-lfr-editable-type="text">
+                        Section Title
+                    </h4>
+                    [#list 1..totalTasks as index] [#assign randBackground = backgrounds[rand(0,3)]]
+                    <li class="list-group-item">
+                        <div class="todo-indicator ${randBackground}"></div>
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left mr-2">
+                                    <div class="custom-checkbox custom-control">
+                                    </div>
+                                </div>
+                                <div class="widget-content-left">
+                                    <div class="widget-heading">
+                                        <label data-lfr-editable-id="TaskTitle_${sectionIndex}_${index}" data-lfr-editable-type="text">
+                      Task Title
+                    </label>
+                                    </div>
+                                </div>
+                                <div class="widget-content-right">
+                                    <span class="badge badge-light text-white ${randBackground}">${rand(1,15)}</span>
+                                    <button class="btn btn-outline-light">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    [/#list] [/#list]
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

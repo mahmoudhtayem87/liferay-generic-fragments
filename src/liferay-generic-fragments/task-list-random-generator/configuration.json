@@ -1,0 +1,44 @@
+{
+    "fieldSets": [{
+        "fields": [{
+                "name": "numberOfTasks",
+                "label": "Number of Tasks",
+                "description": "Number of dummy tasks to be generated",
+                "type": "select",
+                "dataType": "int",
+                "typeOptions": {
+                    "validValues": [
+                        { "value": "1" },
+                        { "value": "2" },
+                        { "value": "3" },
+                        { "value": "4" },
+                        { "value": "5" },
+                        { "value": "6" },
+                        { "value": "7" },
+                        { "value": "8" },
+                        { "value": "9" },
+                        { "value": "10" }
+                    ]
+                },
+                "defaultValue": "3"
+            },
+            {
+                "name": "numberOfSections",
+                "label": "Number of Sections",
+                "description": "Number of dummy tasks sections to be generated",
+                "type": "select",
+                "dataType": "int",
+                "typeOptions": {
+                    "validValues": [
+                        { "value": "1" },
+                        { "value": "2" },
+                        { "value": "3" },
+                        { "value": "4" },
+                        { "value": "5" }
+                    ]
+                },
+                "defaultValue": "3"
+            }
+        ]
+    }]
+}

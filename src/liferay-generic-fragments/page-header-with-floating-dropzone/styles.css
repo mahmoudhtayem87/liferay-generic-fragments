@@ -1,0 +1,106 @@
+.fragment_1201 {}
+
+.fragment_1201 ._form {
+    padding: 1rem;
+    border-radius: 15px;
+    width: 25%;
+    color: #fff;
+    background-color: var(--white);
+}
+
+.sideHeader {
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--primary)
+}
+
+.fragment_1201 .headerBG {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5rem;
+}
+
+.fragment_1201 ._form .ddm-form-basic-info {
+    display: none!important;
+}
+
+.fragment_1201 .ddm-form-basic-info.ddm-form-success-page {
+    display: block!important;
+}
+
+.fragment_1201 ._form .form-feedback-group {
+    display: none!important
+}
+
+.fragment_1201 ._form .form-group {
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    height: 2rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.75rem;
+}
+
+.fragment_1201 ._form .form-control {
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    height: 2rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.75rem;
+}
+
+.fragment_1201 ._form .btn {
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    padding-bottom: 0.4375rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.4375rem;
+    color: var(--light)!important;
+    background-color: var(--primary)!important;
+    border: none!important;
+}
+
+.fragment_1201 .header {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fragment_1201 .header h1 {
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    color: var(--light)!important;
+}
+
+.fragment_1201 .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
