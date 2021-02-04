@@ -1,0 +1,17 @@
+{
+    "fieldSets": [{
+        "fields": [{
+                "name": "portlet",
+                "label": "Portlet Class Name",
+                "description": "button-text",
+                "type": "text",
+                "typeOptions": {
+                    "placeholder": "Placeholder"
+                },
+                "dataType": "string",
+                "defaultValue": ""
+            }
+
+        ]
+    }]
+}

@@ -1,0 +1,9 @@
+.fragment_821 {}
+
+.fragment_821 .showAll {
+    opacity: 1!important;
+}
+
+.fragment_821 .showAll .modal-dialog {
+    width: 100%!important;
+}

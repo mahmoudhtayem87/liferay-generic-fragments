@@ -1,0 +1,29 @@
+[#assign isEdit = "modal"] [#assign display = "display:none"] [#assign req = request.getRequest()] [#assign originalRequest = portalUtil.getOriginalServletRequest(req)] [#if originalRequest.getParameter("p_l_mode")??] [#if originalRequest.getParameter("p_l_mode")
+== "edit"] [#assign isEdit = "showAll"] [#assign display = ""] [/#if] [/#if]
+<div class="bootstrap-modal">
+    <!------ Include the above in your HEAD tag ---------->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    <label data-lfr-editable-id="buttonTitle" data-lfr-editable-type="text">Click Me</label>
+  </button>
+    <!-- Modal -->
+    <div class="${isEdit} fade" id="exampleModalCenter" tabindex="-1" role="dialog" style="${display}" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" data-lfr-editable-id="ModalTitle" data-lfr-editable-type="text">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <lfr-drop-zone></lfr-drop-zone>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            <label data-lfr-editable-id="CloseButtonTitle" data-lfr-editable-type="text">Close Me</label>
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
