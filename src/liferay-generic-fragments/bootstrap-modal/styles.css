@@ -6,4 +6,5 @@
 
 .fragment_821 .showAll .modal-dialog {
     width: 100%!important;
+    position: relative!important;
 }
