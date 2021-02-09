@@ -1,0 +1,36 @@
+{
+    "fieldSets": [{
+        "fields": [{
+            "name": "numberOfTimeTicks",
+            "label": "Number of Time Ticks",
+
+            "type": "select",
+            "dataType": "int",
+            "typeOptions": {
+                "validValues": [
+                    { "value": "1" },
+                    { "value": "2" },
+                    { "value": "3" },
+                    { "value": "4" },
+                    { "value": "5" },
+                    { "value": "6" },
+                    { "value": "7" },
+                    { "value": "8" },
+                    { "value": "9" },
+                    { "value": "10" }
+                ]
+            },
+            "defaultValue": "5"
+        }, {
+            "name": "timelineOption",
+            "label": "timelineOption",
+            "description": "timelineOption",
+            "type": "text",
+            "typeOptions": {
+                "placeholder": "timeline-center"
+            },
+            "dataType": "string",
+            "defaultValue": "timeline-center"
+        }]
+    }]
+}

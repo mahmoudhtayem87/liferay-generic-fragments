@@ -1,0 +1,15 @@
+{
+    "fieldSets": [{
+        "fields": [{
+            "name": "Icon",
+            "label": "Icon",
+            "description": "Icon",
+            "type": "text",
+            "typeOptions": {
+                "placeholder": "folder"
+            },
+            "dataType": "string",
+            "defaultValue": "folder"
+        }]
+    }]
+}

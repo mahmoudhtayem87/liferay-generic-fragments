@@ -1,0 +1,12 @@
+[#assign ticks = configuration.numberOfTimeTicks!0]
+<div class="fragment_1219">
+    <ul class="timeline ${configuration.timelineOption!''}">
+        [#list 1..ticks as tick]
+        <li class="timeline-item">
+            <lfr-drop-zone>
+
+            </lfr-drop-zone>
+        </li>
+        [/#list]
+    </ul>
+</div>
